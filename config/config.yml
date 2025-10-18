@@ -1,0 +1,17 @@
+default:
+  dataset_path: "data/raw_data.csv"
+  test_size: 0.2
+  random_state: 42
+  artifacts_dir: "artifacts"
+  models_dir: "artifacts/models"
+  trained_model_file: "best_model.pkl"
+  preprocessor_file: "preprocessor.pkl"
+  numeric_features: 
+    - year
+    - km_driven
+  categorical_features:
+    - name
+    - fuel 
+    - transmission 
+    - owner
+  target_column: selling_price

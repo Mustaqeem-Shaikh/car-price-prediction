@@ -1,0 +1,6 @@
+2025-10-18 14:11:56,051 - werkzeug - WARNING -  * Debugger is active!
+2025-10-18 14:11:56,051 - werkzeug - INFO -  * Debugger PIN: 476-689-111
+2025-10-18 14:21:05,361 - werkzeug - INFO - 192.168.0.8 - - [18/Oct/2025 14:21:05] "GET / HTTP/1.1" 200 -
+2025-10-18 14:21:05,436 - werkzeug - INFO - 192.168.0.8 - - [18/Oct/2025 14:21:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-10-18 14:21:16,473 - werkzeug - INFO - 192.168.0.8 - - [18/Oct/2025 14:21:16] "POST /predict HTTP/1.1" 200 -
+2025-10-18 14:21:17,882 - werkzeug - INFO - 192.168.0.8 - - [18/Oct/2025 14:21:17] "GET / HTTP/1.1" 200 -

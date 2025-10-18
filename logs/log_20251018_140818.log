@@ -1,0 +1,11 @@
+2025-10-18 14:08:20,734 - car_price_prediction - INFO - Data ingestion completed. Data saved to artifacts\data\raw_data.csv
+2025-10-18 14:08:20,781 - car_price_prediction - INFO - Validation result: DataValidationArtifact(validated=True, message='all required columns present')
+2025-10-18 14:08:21,019 - car_price_prediction - INFO - data transformation completed.
+2025-10-18 14:08:21,079 - car_price_prediction - INFO - Training model name Linear Model
+2025-10-18 14:08:22,686 - car_price_prediction - INFO - Linear Model train metrics: {'mse': 7068237016.459218, 'r2': 0.97177737057085, 'mae': 42396.21147894607} | test metrics: {'mse': 144006558015.09598, 'r2': 0.5130567386911311, 'mae': 146782.2530907406}
+2025-10-18 14:08:22,972 - car_price_prediction - INFO - Training model name Random model
+2025-10-18 14:09:13,586 - car_price_prediction - INFO - Random model train metrics: {'mse': 42022779864.79448, 'r2': 0.832208039862682, 'mae': 128945.55576494636} | test metrics: {'mse': 149409665254.82834, 'r2': 0.4947866911545389, 'mae': 161689.18368690487}
+2025-10-18 14:09:13,586 - car_price_prediction - INFO - Training model name Gradient Boost
+2025-10-18 14:10:42,359 - car_price_prediction - INFO - Gradient Boost train metrics: {'mse': 52036408040.30786, 'r2': 0.7922248139775402, 'mae': 153177.14948615045} | test metrics: {'mse': 152902103458.0803, 'r2': 0.48297737307867095, 'mae': 172718.64881288132}
+2025-10-18 14:10:42,359 - car_price_prediction - INFO - Best model Linear Model save at artifacts/models\best_model.pkl
+2025-10-18 14:10:42,401 - car_price_prediction - INFO - final model metrics: {'mse': 144006558015.09598, 'mae': 146782.2530907406, 'R2': 0.5130567386911311}

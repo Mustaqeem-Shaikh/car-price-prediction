@@ -1,0 +1,9 @@
+2025-10-18 14:07:35,025 - car_price_prediction - ERROR -  Prediction Pipeline init failed
+Traceback (most recent call last):
+  File "C:\Users\LAPPIE\Desktop\Portfolio Projects\Data Science\Car_Price_Prediction\src\Car\pipelines\prediction_pipeline.py", line 22, in __init__
+    self.preprocessor=load_pickle(self.preprocessor_path)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LAPPIE\Desktop\Portfolio Projects\Data Science\Car_Price_Prediction\src\Car\utils\utils.py", line 23, in load_pickle
+    with open(filepath,"rb") as f:
+         ^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts\\preprocessor.pkl'

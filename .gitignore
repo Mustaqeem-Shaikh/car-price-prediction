@@ -1,0 +1,9 @@
+myenv1
+.env
+artifacts_dir
+artifacts/
+.log
+.pkl
+__pycache__/
+build/
+dist/

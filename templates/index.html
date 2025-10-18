@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+  <title>Car Price Prediction</title>
+  <meta charset="utf-8" />
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    form { max-width: 600px; margin: auto; }
+    input, select { width: 100%; padding: 8px; margin: 6px 0; }
+    .btn { padding: 10px 16px; background: #007bff; color: white; border: none; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h1 style="text-align: center;">Car Price Prediction</h1>
+  <form action="/predict" method="post">
+    <label>Name (model):</label>
+    <input name="name" placeholder="e.g. Maruti Swift" required />
+
+    <label>Year:</label>
+    <input name="year" type="number" value="2015" required />
+
+    <label>Kilometers Driven:</label>
+    <input name="km_driven" type="number" value="50000" required />
+
+    <label>Fuel:</label>
+    <select name="fuel">
+      <option>Petrol</option>
+      <option>Diesel</option>
+      <option>CNG</option>
+      <option>Diesel/LPG</option>
+    </select>
+
+    <label>Seller Type:</label>
+    <select name="seller_type">
+      <option>Individual</option>
+      <option>Dealer</option>
+      <option>Trustmark Dealer</option>
+    </select>
+
+    <label>Transmission:</label>
+    <select name="transmission">
+      <option>Manual</option>
+      <option>Automatic</option>
+    </select>
+
+    <label>Owner:</label>
+    <select name="owner">
+      <option>First</option>
+      <option>Second</option>
+      <option>Third</option>
+      <option>Fourth & above</option>
+    </select>
+
+    <button class="btn" type="submit">Predict Price</button>
+  </form>
+</body>
+</html>
