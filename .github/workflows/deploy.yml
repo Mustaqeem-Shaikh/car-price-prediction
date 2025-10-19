@@ -35,14 +35,13 @@ jobs:
         uses: aws-actions/amazon-ecr-login@v1
       
       - name: Build Docker image
+        shell: bash
         run: |
-          export IMAGE_NAME=car-price-prediction
-          export ECR_URI=${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/$IMAGE_NAME
-          docker built -t $IMAGE_NAME .
+          IMAGE_NAME=car-price-prediction
+          ECR_URI=${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/$IMAGE_NAME
+          docker build -t $IMAGE_NAME .
           docker tag $IMAGE_NAME:latest $ECR_URI:latest
 
-      - name: Push docker image to ECR 
-        run: |
-          export IMAGE_NAME=car-price-prediction
-          export ECR_URI=${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/$IMAGE_NAME
-          docker push $ECR_URI: latest
+      - name: Push Docker image
+        shell: bash
+        run: docker push $ECR_URI:latest
