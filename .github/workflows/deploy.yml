@@ -36,8 +36,8 @@ jobs:
       
       - name: Build Docker image
         run: |
-          IMAGE_NAME=car-price-prediction
-          ECR_URI=${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/$IMAGE_NAME
+          export IMAGE_NAME=car-price-prediction
+          export ECR_URI=${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/$IMAGE_NAME
           docker built -t $IMAGE_NAME .
           docker tag $IMAGE_NAME:latest $ECR_URI:latest
 
