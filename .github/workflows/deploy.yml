@@ -43,6 +43,6 @@ jobs:
 
       - name: Push docker image to ECR 
         run: |
-          IMAGE_NAME=car-price-prediction
-          ECR_URI=${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/$IMAGE_NAME
+          export IMAGE_NAME=car-price-prediction
+          export ECR_URI=${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/$IMAGE_NAME
           docker push $ECR_URI: latest
