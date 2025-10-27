@@ -100,15 +100,16 @@ Modular Approach Benefits:-
 4) Scalable and ready for production deployment
 
 Example Input
-name	year	km_driven	fuel transmission	owner
-Maruti Swift	2019	45000	Petrol	Dealer	Manual	First Owner
+name	             year	        km_driven        	fuel          transmission     	    owner
+Maruti Swift	     2019	          45000	         Petrol		         Manual        	   First Owner
 
 Predicted Price: ₹5.6 Lakhs
 
-The below things we can do in this project for the Future Improvements are mentioned below:-
+The below things we can do in this project for the Future Improvements:-
 
 1) We can also integrate MLOps tools like MLflow or DVC for version controling
 
 2) We can extend deployment to AWS S3 + Lambda + API Gateways 
 
 3) We can  build  a React frontend for better UI
+
