@@ -8,51 +8,6 @@ This project follows an industry-grade modular structure that separates each com
 <img width="854" height="433" alt="Screenshot 2025-10-27 203552" src="https://github.com/user-attachments/assets/c821a585-ce06-487c-9318-cfe062fe4fe2" />
 
 
-Project Architecture:- 
-Car Price Prediction/
-│
-├── .github/
-│   └── workflows/
-│       └── deploy.yml          # GitHub Actions CI/CD pipeline
-│
-├── .env                        # Environment variables (GitHub Secrets used for deployment)
-├── Dockerfile                  # Docker container for deployment
-├── README.md                   # Project documentation
-│
-├── config/
-│   └── config.yaml             # Global configuration file for project paths and parameters
-│
-├── src/
-│   └── Car/
-│       ├── components/         # All modular ML components
-│       │   ├── data_ingestion.py
-│       │   ├── data_transformation.py
-│       │   ├── model_trainer.py
-│       │   └── model_evaluation.py
-│       │
-│       ├── entity/             # Entity classes for data structures (artifacts, configs)
-│       │   ├── config_entity.py
-│       │   └── artifact_entity.py
-│       │
-│       ├── pipeline/           # Orchestrates all steps end-to-end
-│       │   ├── training_pipeline.py
-│       │   └── prediction_pipeline.py
-│       │
-│       ├── utils/              # Helper functions (YAML I/O, logging, model saving, etc.)
-│       │   └── utils.py
-│       │
-│       ├── exception.py        # Custom exception handling
-│       ├── logger.py           # Centralized logging system
-│       └── __init__.py
-│
-├── notebooks/
-│   └── EDA.ipynb               # Exploratory Data Analysis notebook
-│
-├── artifacts/                  # Automatically generated artifacts (datasets, models, reports)
-│
-├── app.py                      # Flask web application for prediction
-├── requirements.txt            # Python dependencies
-└── setup.py                    # Project setup file for packaging
 
 Features & Workflow
 
@@ -116,5 +71,6 @@ The below things we can do in this project for the Future Improvements:-
 2) We can extend deployment to AWS S3 + Lambda + API Gateways 
 
 3) We can  build  a React frontend for better UI
+
 
 
