@@ -3,6 +3,10 @@ Project Overview:-
 The Car Price Prediction System is a modular machine learning project designed to predict the selling price of used cars based on various features such as car name, year, kilometers driven, fuel type, seller type, transmission, and ownership history.
 This project follows an industry-grade modular structure that separates each component (like data ingestion, transformation, training, and prediction) for better scalability, maintainability, and deployment readiness.
 
+<img width="883" height="332" alt="Screenshot 2025-10-27 203507" src="https://github.com/user-attachments/assets/443aae62-ed98-4060-ab5e-1f912c51e391" />
+<img width="802" height="372" alt="Screenshot 2025-10-27 203533" src="https://github.com/user-attachments/assets/74d547d1-014d-4fe9-bdb7-e980bf94533f" />
+<img width="854" height="433" alt="Screenshot 2025-10-27 203552" src="https://github.com/user-attachments/assets/c821a585-ce06-487c-9318-cfe062fe4fe2" />
+
 
 Project Architecture:- 
 Car Price Prediction/
@@ -112,4 +116,5 @@ The below things we can do in this project for the Future Improvements:-
 2) We can extend deployment to AWS S3 + Lambda + API Gateways 
 
 3) We can  build  a React frontend for better UI
+
 
